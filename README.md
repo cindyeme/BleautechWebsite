@@ -1,5 +1,5 @@
-# OwerriTech-Hub
-Official website of owerritech-hub.
+# BLEAUTECH
+Official website of Bleautech.
 
 # ABOUT US
-We run IT training bootcamps with focus on best tools and practises used in the Tech ecosystem. We also incubate startups with the right tools for business growth.
+We are a Tech company based in owerri, we offer all kinds of designs, web development, digital marketing, content creation, ads and promotion and lots more.
