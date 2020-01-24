@@ -1,52 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>bleautech Web page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+@extends('layouts.user')
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
-
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+@section('content')
    
     
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
@@ -262,16 +216,14 @@
             <div class="team-member">
               <figure>
                 <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="https://twitter.com/rexsteroxxy" target="blank"><span class="icon-twitter"></span></a></li>
+                  <li><a href="https://www.linkedin.com/in/amadiaustinchukwuemeka/" target="blank"><span class="icon-linkedin"></span></a></li>
                 </ul>
-                <img src="images/person_6.jpg" alt="Image" class="img-fluid">
+                <img src="images/rex.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Precious Chieke</h3>
-                <span class="position">Digital Marketer</span>
+                <h3>Amadi Austin Chukwuemeka</h3>
+                <span class="position">Software Engineer</span>
               </div>
             </div>
           </div>
@@ -285,10 +237,10 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_7.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Austin Amadi</h3>
+                <h3>Emeto Winner</h3>
                 <span class="position">Software Developer</span>
               </div>
             </div>
@@ -303,7 +255,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_8.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Patricia Onuoha</h3>
@@ -321,7 +273,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Kaiara Spencer</h3>
@@ -339,7 +291,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Dave Simpson</h3>
@@ -357,7 +309,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Ben Thompson</h3>
@@ -375,7 +327,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+                <img src="images/empty.jpeg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Chris Stewart</h3>
@@ -1013,22 +965,4 @@
       </div>
     </footer>
 
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-
-  
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>
+    @endsection
