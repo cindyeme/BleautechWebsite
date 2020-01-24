@@ -18,4 +18,4 @@ Route::post('/message', 'PagesController@message');
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin', 'AdminController@index')->name('home');
