@@ -3,16 +3,10 @@
 @section('content')
    
 @include('includes.header')  
-    
 @include('includes.about')
-
-@include('includes.portfolio')
-   
-@include('includes.testimonials')
-    
-@include('includes.questions')
-    
-@include('includes.other')
+@include('includes.services')
+@include('includes.team')  
+@include('includes.blog')
    
 @include('includes.contact')
 

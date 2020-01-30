@@ -26,19 +26,21 @@ public function __construct()
      */
 public function index()
     {
-        return view('admin');
+        $blogs = Blog::all();
+
+        return view('admin.admin',compact('blogs'));
 }
 
 public function feedback()
     {
         $feedbacks = Contact::all();;
     
-        return view('feedback',compact('feedbacks'));
+        return view('admin.feedback',compact('feedbacks'));
     }
 
 public function createBlog()
     {
-        return view('createBlog');
+        return view('admin.createBlog');
 }
 
 public function publishBlog(Request $request)
@@ -63,9 +65,9 @@ public function publishBlog(Request $request)
 
 public function viewBlogs()
     {
-        $blogs = Blog::all();;
+        $blogs = Blog::all();
     
-        return view('viewblogs',compact('blogs'));
+        return view('admin.viewblogs',compact('blogs'));
 }
 
 public function deleteBlog($blog_id){
@@ -105,20 +107,20 @@ public function editBlog(Request $request,$blog_id){
 public function viewEditBlog($blog_id)
     {
         $blog = Blog::find($blog_id);
-        return view('editblog',compact('blog'));
+        return view('admin.editblog',compact('blog'));
 }
 
 
 
 public function view($blog_id){
         $blog = Blog::find($blog_id);
-        return view('blogview',compact('blog'));
+        return view('admin.blogview',compact('blog'));
 }
 
 
 
 public function createTeam(){
-    return view('createTeam');
+    return view('admin.createTeam');
 }
 
 
@@ -128,8 +130,13 @@ public function addTeam(Request $request)
         $this->validate($request, [
             "name"=>"required",
             "title"=>"required",
+            "twitter"=>"required",
+            "linkedin"=>"required",
+            "instagram"=>"required",
+            "facebook"=>"required",
+            "title"=>"required",
             "image_url" => "required",
-            "story"=>"required"
+            "story"=>"required",
             
         ]);
            
@@ -137,6 +144,10 @@ public function addTeam(Request $request)
             $team->user_id = Auth::user()->id;
             $team->name = $request->input('name');
             $team->title = $request->input('title');
+            $team->twitter = $request->input('twitter');
+            $team->linkedin = $request->input('linkedin');
+            $team->instagram= $request->input('instagram');
+            $team->facebook = $request->input('facebook');
             $team->image_Url = $request->input('image_url');
             $team->story = $request->input('story');
             $team->save();
@@ -146,9 +157,9 @@ public function addTeam(Request $request)
 
 public function viewTeams()
     {
-        $teams = Team::all();;
+        $teams = Team::all();
     
-        return view('viewTeams',compact('teams'));
+        return view('admin.viewTeams',compact('teams'));
 }
 
 

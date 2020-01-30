@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
-
+use App\Team;
+use App\Blog;
 class PagesController extends Controller
 {
     
-    public function getHome(){ 
+public function getHome(){ 
+        $teams = Team::all();;
+        $blogs = Blog::all();;
 
-    	return view('index');
-    }
+    	return view('index',compact('teams','blogs'));
+}
     
-    public function message(Request $request)
+public function message(Request $request)
     {
         $contact = new Contact;
         $contact->firstname = $request->input('firstname');

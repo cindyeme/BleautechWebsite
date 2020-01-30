@@ -16,22 +16,12 @@
                   <a href="#about-section" class="nav-link">About Us</a>
                   <ul class="dropdown">
                     <li><a href="#team-section" class="nav-link">Team</a></li>
-                    <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-                    <li><a href="#faq-section" class="nav-link">FAQ</a></li>
-                    <li class="has-children">
-                      <a href="#">More Links</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
+                   
                   </ul>
                 </li>
-                
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+              
                 <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                
                 <li><a href="#blog-section" class="nav-link">Blog</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
