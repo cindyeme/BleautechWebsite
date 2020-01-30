@@ -17,6 +17,12 @@
                                 <span class="fa fa-trash">Edit Blog</span>
                             </a>
                         </li>
+
+                        <li role="presentation">
+                            <a href='{{ url("/view/{$blog->id}") }}'>
+                                <span class="fa fa-eye">View</span>
+                            </a>
+                        </li>
                 @endforeach
                 @else
                 <h2>NO blog FOR NOW</h2>

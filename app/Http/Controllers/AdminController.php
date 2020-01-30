@@ -59,7 +59,7 @@ class AdminController extends Controller
            return redirect('/admin')->with('response','Published successfully');
     }
 
-    public function viewBlog()
+    public function viewBlogs()
     {
         $blogs = Blog::all();;
     
@@ -106,5 +106,9 @@ public function viewEditBlog($blog_id)
         return view('editblog',compact('blog'));
     }
 
+    public function view($blog_id){
+        $blog = Blog::find($blog_id);
+        return view('blogview',compact('blog'));
+    }
 
 }
