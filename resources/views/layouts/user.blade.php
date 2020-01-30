@@ -28,8 +28,9 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
+<div class="container-fluid">
 
-  <div id="overlayer"></div>
+<div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
       <span class="sr-only">Loading...</span>
@@ -52,6 +53,8 @@
 
 
     </div> <!-- .site-wrap -->
+</div>
+  
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.js"></script>
