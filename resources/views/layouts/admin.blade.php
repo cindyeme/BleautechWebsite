@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bleautech Admin DashBoard</title>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css ') }}">
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
@@ -96,10 +96,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script src="{{asset('js/popper.min.js') }}"></script>
+  <script src="{{asset('js/bootstrap.min.js') }} "></script>
+  
   <script>
       CKEDITOR.replace( 'editor1' );
   </script>

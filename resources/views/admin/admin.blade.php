@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-3">
           <a href="{{ route('viewBlog') }}" class="btn btn-warning btn-block" >
-            <i class="fa fa-plus"></i>View Blogs Post
+            <i class="fa fa-plus"></i>View Blog Posts
           </a>
         </div>
       </div>
