@@ -23,6 +23,7 @@
                     <a href="{{ route('feedback') }}">Click To View Feedbacks</a><br>
                     <a href="{{ route('blog') }}">Click To Blog</a><br>
                     <a href="{{ route('viewBlog') }}">Click To View Blog</a><br>
+                    <a href="{{ route('addMember') }}">Click To Add Member</a><br>
 
                 </div>
             </div>

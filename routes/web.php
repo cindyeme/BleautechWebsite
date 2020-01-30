@@ -27,3 +27,5 @@ Route::get('/delete/{id}','AdminController@deleteBlog');
 Route::get('/edit/{id}','AdminController@viewEditBlog');
 Route::post('/edit/{id}','AdminController@editBlog');
 Route::get('/view/{id}','AdminController@view');
+Route::get('/addTeam','AdminController@createTeam')->name('addMember');
+Route::post('/addTeam','AdminController@addTeam');
