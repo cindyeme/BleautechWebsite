@@ -26,7 +26,9 @@ public function __construct()
      */
 public function index()
     {
-        return view('admin.admin');
+        $blogs = Blog::all();
+
+        return view('admin.admin',compact('blogs'));
 }
 
 public function feedback()
