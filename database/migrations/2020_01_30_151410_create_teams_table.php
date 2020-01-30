@@ -18,6 +18,10 @@ class CreateTeamsTable extends Migration
             $table->string('user_id');
             $table->string('name');
             $table->string('title');
+            $table->string('twitter');
+            $table->string('linkedin');
+            $table->string('instagram');
+            $table->string('facebook');
             $table->string('image_Url');
             $table->text('story');
             $table->timestamps();

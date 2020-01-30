@@ -128,8 +128,13 @@ public function addTeam(Request $request)
         $this->validate($request, [
             "name"=>"required",
             "title"=>"required",
+            "twitter"=>"required",
+            "linkedin"=>"required",
+            "instagram"=>"required",
+            "facebook"=>"required",
+            "title"=>"required",
             "image_url" => "required",
-            "story"=>"required"
+            "story"=>"required",
             
         ]);
            
@@ -137,6 +142,10 @@ public function addTeam(Request $request)
             $team->user_id = Auth::user()->id;
             $team->name = $request->input('name');
             $team->title = $request->input('title');
+            $team->twitter = $request->input('twitter');
+            $team->linkedin = $request->input('linkedin');
+            $team->instagram= $request->input('instagram');
+            $team->facebook = $request->input('facebook');
             $team->image_Url = $request->input('image_url');
             $team->story = $request->input('story');
             $team->save();

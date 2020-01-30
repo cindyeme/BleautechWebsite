@@ -54,6 +54,65 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('twitter') ? ' has-error' : '' }}">
+                            <label for="twitter" class="col-md-4 control-label">Twitter Handle</label>
+
+                            <div class="col-md-6">
+                                <input id="twitter" type="text" class="form-control" name="twitter"
+                                 value="{{ old('twitter') }}"autofocus >
+
+                                @if ($errors->has('twitter'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('twitter') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('linkedin') ? ' has-error' : '' }}">
+                            <label for="linkedin" class="col-md-4 control-label">linkedin Handle</label>
+
+                            <div class="col-md-6">
+                                <input id="linkedin" type="text" class="form-control" name="linkedin"
+                                 value="{{ old('linkedin') }}"autofocus >
+
+                                @if ($errors->has('linkedin'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('linkedin') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group{{ $errors->has('instagram') ? ' has-error' : '' }}">
+                            <label for="instagram" class="col-md-4 control-label">instagram Handle</label>
+
+                            <div class="col-md-6">
+                                <input id="instagram" type="text" class="form-control" name="instagram"
+                                 value="{{ old('instagram') }}"autofocus >
+
+                                @if ($errors->has('instagram'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('instagram') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('facebook') ? ' has-error' : '' }}">
+                            <label for="facebook" class="col-md-4 control-label">facebook Handle</label>
+
+                            <div class="col-md-6">
+                                <input id="facebook" type="text" class="form-control" name="facebook"
+                                 value="{{ old('facebook') }}"autofocus >
+
+                                @if ($errors->has('facebook'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('facebook') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('image_url') ? ' has-error' : '' }}">
                             <label for="image_url" class="col-md-4 control-label">Image_Url</label>
 

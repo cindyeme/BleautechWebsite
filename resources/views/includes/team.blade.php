@@ -15,10 +15,10 @@
             <div class="team-member">
               <figure>
                 <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="{{$team->facebook}}"><span class="icon-facebook"></span></a></li>
+                  <li><a href="{{$team->twitter}}"><span class="icon-twitter"></span></a></li>
+                  <li><a href="{{$team->linkedin}}"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="{{$team->instagram}}"><span class="icon-instagram"></span></a></li>
                 </ul>
                 <img src="{{$team->image_Url}}" alt="Image" class="img-fluid">
               </figure>
