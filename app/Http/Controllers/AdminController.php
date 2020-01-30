@@ -63,7 +63,7 @@ public function publishBlog(Request $request)
 
 public function viewBlogs()
     {
-        $blogs = Blog::all();;
+        $blogs = Blog::all();
     
         return view('viewblogs',compact('blogs'));
 }
@@ -146,7 +146,7 @@ public function addTeam(Request $request)
 
 public function viewTeams()
     {
-        $teams = Team::all();;
+        $teams = Team::all();
     
         return view('viewTeams',compact('teams'));
 }

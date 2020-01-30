@@ -28,7 +28,7 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
-<div class="container-fluid">
+
 
 <div id="overlayer"></div>
   <div class="loader">
@@ -53,7 +53,7 @@
 
 
     </div> <!-- .site-wrap -->
-</div>
+
   
 
 <script src="js/jquery-3.3.1.min.js"></script>

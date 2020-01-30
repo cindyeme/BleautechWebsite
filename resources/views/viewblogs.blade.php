@@ -1,5 +1,5 @@
 <div class="col-md-8">
-                @if(count($blogs) > 0)
+                @if(count($blogs) > 0) 
 
                 @foreach($blogs->all() as $blog)
                     <li>{{$blog->id}}</li>
