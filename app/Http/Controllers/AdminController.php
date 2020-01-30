@@ -151,4 +151,10 @@ public function viewTeams()
         return view('viewTeams',compact('teams'));
 }
 
+
+public function deleteTeam($team_id){
+    Team::where('id',$team_id)->delete();
+
+    return redirect('/admin')->with('response','Member deleted  successfully');
+}
 }
