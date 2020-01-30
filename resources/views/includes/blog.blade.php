@@ -25,7 +25,7 @@
 
           @endforeach
                 @else
-                <h2>NO blog FOR NOW</h2>
+                <h2>NO BLOG FOR NOW</h2>
 
                 @endif
           
