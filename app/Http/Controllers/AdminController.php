@@ -26,19 +26,19 @@ public function __construct()
      */
 public function index()
     {
-        return view('admin');
+        return view('admin.admin');
 }
 
 public function feedback()
     {
         $feedbacks = Contact::all();;
     
-        return view('feedback',compact('feedbacks'));
+        return view('admin.feedback',compact('feedbacks'));
     }
 
 public function createBlog()
     {
-        return view('createBlog');
+        return view('admin.createBlog');
 }
 
 public function publishBlog(Request $request)
@@ -65,7 +65,7 @@ public function viewBlogs()
     {
         $blogs = Blog::all();
     
-        return view('viewblogs',compact('blogs'));
+        return view('admin.viewblogs',compact('blogs'));
 }
 
 public function deleteBlog($blog_id){
@@ -105,20 +105,20 @@ public function editBlog(Request $request,$blog_id){
 public function viewEditBlog($blog_id)
     {
         $blog = Blog::find($blog_id);
-        return view('editblog',compact('blog'));
+        return view('admin.editblog',compact('blog'));
 }
 
 
 
 public function view($blog_id){
         $blog = Blog::find($blog_id);
-        return view('blogview',compact('blog'));
+        return view('admin.blogview',compact('blog'));
 }
 
 
 
 public function createTeam(){
-    return view('createTeam');
+    return view('admin.createTeam');
 }
 
 
@@ -148,7 +148,7 @@ public function viewTeams()
     {
         $teams = Team::all();
     
-        return view('viewTeams',compact('teams'));
+        return view('admin.viewTeams',compact('teams'));
 }
 
 
