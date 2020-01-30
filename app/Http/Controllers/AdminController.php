@@ -142,5 +142,13 @@ public function addTeam(Request $request)
             $team->save();
             
            return redirect('/admin')->with('response','Member Added successfully');
-    }
+}
+
+public function viewTeams()
+    {
+        $teams = Team::all();;
+    
+        return view('viewTeams',compact('teams'));
+}
+
 }

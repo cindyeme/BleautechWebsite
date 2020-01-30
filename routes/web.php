@@ -29,3 +29,4 @@ Route::post('/edit/{id}','AdminController@editBlog');
 Route::get('/view/{id}','AdminController@view');
 Route::get('/addTeam','AdminController@createTeam')->name('addMember');
 Route::post('/addTeam','AdminController@addTeam');
+Route::get('/viewTeam', 'AdminController@viewTeams')->name('viewTeam');
