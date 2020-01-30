@@ -20,3 +20,5 @@ Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('home');
 Route::get('/feedback', 'AdminController@feedback')->name('feedback');
+Route::get('/createBlog', 'AdminController@createBlog')->name('blog');
+Route::post('/publish', 'AdminController@publishBlog');

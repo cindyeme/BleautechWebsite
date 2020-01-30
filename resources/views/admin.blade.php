@@ -16,6 +16,7 @@
 
                     You are logged in!
                     <a href="{{ route('feedback') }}">Click To View Feedbacks</a>
+                    <a href="{{ route('blog') }}">Click To Blog</a>
                 </div>
             </div>
         </div>
