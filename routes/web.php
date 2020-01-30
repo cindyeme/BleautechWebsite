@@ -19,3 +19,4 @@ Route::post('/message', 'PagesController@message');
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('home');
+Route::get('/feedback', 'AdminController@feedback')->name('feedback');

@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="{{ route('feedback') }}">Click To View Feedbacks</a>
                 </div>
             </div>
         </div>
