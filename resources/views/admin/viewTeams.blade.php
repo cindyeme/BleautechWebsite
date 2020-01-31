@@ -9,7 +9,7 @@
                     <li>{{$team->story}}</li>
                     <li>{{$team->created_at}}</li>
                     <li role="presentation">
-                            <a href='{{ url("/delete/{$team->id}") }}'>
+                            <a href='{{ url("/deleteTeam/{$team->id}") }}'>
                                 <span class="fa fa-trash">Delete</span>
                             </a>
                         </li>

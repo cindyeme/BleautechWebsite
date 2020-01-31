@@ -30,4 +30,4 @@ Route::get('/view/{id}','AdminController@view');
 Route::get('/addTeam','AdminController@createTeam')->name('addMember');
 Route::post('/addTeam','AdminController@addTeam');
 Route::get('/viewTeam', 'AdminController@viewTeams')->name('viewTeam');
-Route::get('/delete/{id}','AdminController@deleteTeam');
+Route::get('/deleteTeam/{id}','AdminController@deleteTeam');
