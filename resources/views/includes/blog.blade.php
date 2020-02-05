@@ -19,7 +19,7 @@
               <h2 class="font-size-regular"><a href="#">{{$blog->blog_title}}</a></h2>
               <div class="meta mb-4">Published<span class="mx-2">&bullet;</span> {{$blog->created_at}}<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
               <p>{{$blog->story}}</p>
-              <p><a href="#">Continue Reading...</a></p>
+              <p><a href="/readmore">Continue Reading...</a></p>
             </div> 
           </div>
 
