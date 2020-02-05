@@ -33,7 +33,7 @@ public function index()
 
 public function feedback()
     {
-        $feedbacks = Contact::all();;
+        $feedbacks = Contact::paginate(10);
     
         return view('admin.feedback',compact('feedbacks'));
     }
