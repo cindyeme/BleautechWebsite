@@ -4,12 +4,13 @@
 
   
      
-    <div class="site-blocks-cover overlay" style="background-image: url(images/img_1.jpg);" data-aos="fade">
+    <div class="overlay" 
+    style="background-color:blue" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
           
-              <div class="col-md-6 mt-lg-5 text-center">
+              <div class="col-md-6 mt-lg-5 text-center" style="color:white">
                 <h1>Where Do You Learn HTML & CSS in 2019?</h1>
                 <p class="post-meta">March 21, 2019 &bull; Posted by <a href="#">Admin</a> in <a href="#">Events</a></p>
                 

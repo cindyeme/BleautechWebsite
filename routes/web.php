@@ -13,6 +13,7 @@
 
 //Routes for the getting the whole web pages on view root folder
 Route::get('/', 'PagesController@getHome')->name('index');
+Route::get('/readmore/{id}', 'PagesController@readMore')->name('index');
 Route::post('/message', 'PagesController@message');
 
 
