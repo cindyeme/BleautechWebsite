@@ -28,7 +28,7 @@
                 <h2>NO BLOG FOR NOW</h2>
 
                 @endif
-          
+         
          
         </div>
       </div>

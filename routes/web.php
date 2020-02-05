@@ -22,7 +22,7 @@ Route::get('/admin', 'AdminController@index')->name('home');
 Route::get('/feedback', 'AdminController@feedback')->name('feedback');
 Route::get('/createBlog', 'AdminController@createBlog')->name('blog');
 Route::post('/publish', 'AdminController@publishBlog');
-Route::get('/viewBlog', 'AdminController@viewBlogs')->name('viewBlog');
+Route::get('/viewBlogs', 'AdminController@viewBlogs')->name('viewBlog');
 Route::get('/delete/{id}','AdminController@deleteBlog');
 Route::get('/edit/{id}','AdminController@viewEditBlog');
 Route::post('/edit/{id}','AdminController@editBlog');
